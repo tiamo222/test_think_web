@@ -1,0 +1,145 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+
+}
+img {
+	border : 0;
+}
+A:link {
+	COLOR: #0000cc;
+	TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0000cc;
+	TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #0099ff;
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0099ff;
+	TEXT-DECORATION: none
+}
+.text1 {
+	FONT: 10pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+.bot1 {
+	FONT: bold 10pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+.text2 {
+	FONT: 9pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+.bot2 {
+	FONT: bold 9pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+
+.big1 {
+	FONT: bold 16px "Tahoma";
+	TEXT-TRANSFORM: none
+}
+.big2 {
+	FONT: bold 23px "Tahoma";
+	TEXT-TRANSFORM: none
+}
+
+
+.text_normal1 {
+	FONT: 10pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+.text_bot1 {
+	FONT: bold 10pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+
+.text_normal2 {
+	FONT: 8pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+.text_bot2 {
+	FONT: bold 8pt "Tahoma";
+	TEXT-TRANSFORM: none
+}
+
+.text_big2 {
+	FONT: bold 16px "Tahoma";
+	TEXT-TRANSFORM: none
+}
+
+
+.text_big_normal {
+	FONT: 16px "Tahoma";
+	TEXT-TRANSFORM: none
+}
+
+
+/* main */
+.page_body_main {
+	width:100%;
+	border: 0;
+}
+/* sub main */
+.page_body_left {
+	width:220px;
+	padding:2;
+	vertical-align:top;
+}
+.page_body_center {
+	padding:2px;
+	width: 100%;
+	vertical-align:top;
+}
+.page_body_right {
+	width:250px;
+	padding:2;
+	vertical-align:top;
+}
+.page_body_bottom {
+	position:relative;
+	width:100%;
+	overflow:auto;
+	visibility: visible;
+	margin:0 auto;
+}
+/* line */
+.line_span {
+	border:0;
+}
+.line_span td{
+	padding:0;
+}
+/* warning */
+.warn_box {
+	background-color:#D43B01;
+	border:none;
+	width:100%;
+}
+.warn_box td{
+	background-color:#FFCC99; 
+	font-family: Tahoma;
+	font-size: 13px;
+	padding:5px;
+	text-transform: none;
+}
+/* help */
+.help_box {
+	background-color:#009966;
+	border:none;
+	width:100%;
+}
+.help_box td{
+	background-color:#DDEEDD; 
+	font-family: Tahoma;
+	font-size: 13px;
+	padding:5px;
+	text-transform: none;
+}

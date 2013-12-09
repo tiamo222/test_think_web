@@ -1,0 +1,548 @@
+<table id="content_detail_load_message" style="display:block; position:absolute; z-index:1000" width="800" height="518">
+	<tr> 
+		<td align="center" valign="middle"><div style="background-color:#666666; border:1px solid #333333; padding: 10px; width: 100px; color:#FFFFFF; font-family:verdana,arial,helvetica,sans-serif; font-size:12px; font-weight:bold">Please&nbsp;Wait...&nbsp;</div></td>
+	</tr>
+</table>
+<!-- begin 1st instance only -->
+<script language="JavaScript" type="text/javascript" src="/app_webeditor/js/IE5script.js"></script>
+<script language="JavaScript" type="text/javascript" src="/app_webeditor/js/editorShared.js"></script>
+<script language="JavaScript" type="text/javascript" src="/app_webeditor/js/dialogEditorShared.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--// 
+/* //////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////*/
+//<!-- begin ie50_remove -->
+var wp_oPopUp = window.createPopup();
+//<!-- end ie50_remove -->
+var wp_directory = '/app_webeditor/';
+var wp_is_ie50 = false;
+document.createStyleSheet('/app_webeditor/editor_theme.css');
+//-->
+</script>
+<!-- end 1st instance only -->
+<script language="JavaScript" type="text/javascript">
+<!--// instance content_detail configuration
+var config_content_detail = new wp_config(); 
+config_content_detail.name = 'content_detail';
+config_content_detail.instance_lang = 'en-us.php';
+config_content_detail.encoding = 'iso-8859-1';
+config_content_detail.xhtml_lang = 'en';
+config_content_detail.useXHTML = false;
+config_content_detail.baseURLurl = '';
+config_content_detail.baseURL = ''
+config_content_detail.instance_img_dir = '';
+config_content_detail.instance_doc_dir = '';
+//<!-- begin removeserver -->
+config_content_detail.domain1 = new RegExp('(href=|src=|action=)"',"gi");
+config_content_detail.domain2 = new RegExp('(href=|src=|action=)"http:\/\/thinksoft\.co\.th',"gi");
+//<!-- end removeserver -->
+config_content_detail.imagewindow = "image.php";
+config_content_detail.links = '';
+config_content_detail.custom_inserts = '';
+config_content_detail.stylesheet = '../system_web/style_web_admin.css';
+config_content_detail.imenu_height = 182;
+config_content_detail.bmenu_height = 125;
+config_content_detail.smenu_height = 151;
+config_content_detail.tmenu_height = 422;
+config_content_detail.usep = false;
+config_content_detail.showbookmarkmngr = true;
+config_content_detail.subsequent = false;
+config_content_detail.color_swatches = '';
+config_content_detail.border_visible = 1;
+config_content_detail.doctype = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">';
+config_content_detail.charset = '';
+// lang
+config_content_detail.lang['guidelines_hidden'] = 'guidelines hidden';
+config_content_detail.lang['guidelines_visible'] = 'guidelines visible';
+config_content_detail.lang['place_cursor_in_table'] = 'Place your cursor inside the table, row or cell you wish to modify';
+config_content_detail.lang['only_split_merged_cells'] = 'Can only split cells that have been merged';
+config_content_detail.lang['no_cell_right'] = 'There is no cell to the right of this one to merge with.';
+config_content_detail.lang['different_row_spans'] = 'Cannot merge cells that span different rows.';
+config_content_detail.lang['no_cell_below'] = 'There is no cell below this one to merge with.';
+config_content_detail.lang['different_column_spans'] = 'Cannot merge cells with different column spans.';
+config_content_detail.lang['select_hyperlink_text'] = 'Please select some text to turn into a hyperlink';
+config_content_detail.lang['upgrade'] = 'You need to upgrade your web browser to fully enable this editor.\n\nSupported browsers include Mozilla 1.4, Netscape 7.1 and Internet Explorer 5.0 or newer.\n\nYou can still edit this document but only in HTML code view. \n\nNote: If you are using a supported browser you just need to refresh the page.';
+config_content_detail.lang['format'] = 'Format';
+config_content_detail.lang['font'] = 'Font';
+config_content_detail.lang['class'] = 'Class';
+config_content_detail.lang['size'] = 'Size';
+// End -->
+</script>
+<table id="content_detail_container" width="800" height="550" style="border: 1px solid threedshadow; background-color: threedface; table-layout:fixed;" border="0" cellspacing="0" cellpadding="5">
+	<tr> 
+		<td> 
+			<div id="content_detail_tab_one" style="display:block;"> 
+				<table id="content_detail_toolbar1" class="toolbar" style="height:24px;" border="0" cellpadding="0" cellspacing="0">
+					<tr> 
+						
+						<!-- begin print -->
+						<td><img cid="forecolor" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Print');" alt="Print..." src="/app_webeditor/images/print.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end print -->
+						<!-- begin find -->
+						<td><img cid="forecolor" class="ready" width="22" height="22" onClick="wp_findit(content_detail);" alt="Find And Replace..." src="/app_webeditor/images/find.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end find -->
+						<!-- begin spacer1 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer1 -->
+						<!-- begin cut -->
+						<td><img cid="cut" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Cut');" alt="Cut" src="/app_webeditor/images/cut.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end cut -->
+						<!-- begin copy -->
+						<td><img cid="cut" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Copy');" alt="Copy" src="/app_webeditor/images/copy.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end copy -->
+						<!-- begin paste -->
+						<td><img cid="paste" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Paste');" alt="Paste" src="/app_webeditor/images/paste.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end paste -->
+						<!-- begin pasteword -->
+						<td><img cid="redo" class="ready" width="22" height="22" onClick="wp_paste_word_html(content_detail,this);" alt="Paste From Word..." src="/app_webeditor/images/pasteword.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end pasteword -->
+						<!-- begin spacer2 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer2 -->
+						<!-- begin undo -->
+						<td><img cid="undo" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Undo');" alt="Undo" src="/app_webeditor/images/undo.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end undo -->
+						<!-- begin redo -->
+						<td><img cid="redo" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Redo');" alt="Redo" src="/app_webeditor/images/redo.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end redo -->
+						<!-- begin spacer3 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer3 -->
+						<!-- begin tbl -->
+						<td><img cid="forecolor" class="ready" width="22" height="22" onClick="wp_open_table_window(content_detail,this);" alt="Insert Table..." src="/app_webeditor/images/instable.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- begin edittable -->
+						<td><img cid="edittable" class="ready" src="/app_webeditor/images/edittable.gif" width="22" height="22" alt="Table, Row and Cell Properties..." onClick="wp_open_table_editor(content_detail,this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<td><img cid="edittable" class="ready" src="/app_webeditor/images/insrow.gif" width="22" height="22" alt="Add Row..." onClick="wp_processRow(content_detail,'choose',this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<td><img cid="edittable" class="ready" src="/app_webeditor/images/delrow.gif" width="22" height="22" alt="Delete Row" onClick="wp_processRow(content_detail,'remove',this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<td><img cid="edittable" class="ready" src="/app_webeditor/images/inscol.gif" width="22" height="22" alt="Insert Column..." onClick="wp_processColumn(content_detail,'choose',this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<td><img cid="edittable" class="ready" src="/app_webeditor/images/delcol.gif" width="22" height="22" alt="Delete Column" onClick="wp_processColumn(content_detail,'remove',this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<td><img cid="edittable" class="ready" src="/app_webeditor/images/mrgcell.gif" width="22" height="22" alt="Merge Cell With Another Cell..." onClick="wp_mergeCell(content_detail,this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<td><img cid="splitcell" class="ready" src="/app_webeditor/images/spltcell.gif" width="22" height="22" alt="Unmerge Cell" onClick="wp_splitCell(content_detail,this);" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end edittable -->
+						<!-- end tbl -->
+						<!-- begin spacer4 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer4 -->
+						<!-- begin image -->
+						<td><img cid="insertimage" class="ready" width="22" height="22" onClick="wp_open_image_window(content_detail,this);" alt="Insert/Edit an Image..." src="/app_webeditor/images/image.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end image -->
+						<!-- begin smiley -->
+						<td><img cid="insertimage" class="ready" width="22" height="22" onClick="wp_insert_smiley(content_detail,this);" alt="Insert an Emoticon" src="/app_webeditor/images/smiley.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end smiley -->
+						<!-- begin ruler -->
+						<td><img cid="inserthorizontalrule" class="ready" width="22" height="22" onClick="wp_open_horizontal_rule_window(content_detail,this);" alt="Horizontal Line..." src="/app_webeditor/images/icon_rule.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end ruler -->
+						<!-- begin link -->
+						<td><img cid="createlink" class="ready" width="22" height="22" onClick="wp_open_hyperlink_window(content_detail,this);" alt="Insert/Edit a Hyperlink..." src="/app_webeditor/images/link.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end link -->
+						<!-- begin document -->
+						<td><img cid="createlink" class="ready" width="22" height="22" onClick="wp_open_document_window(content_detail,this);" alt="Link To A Document..." src="/app_webeditor/images/doc_link.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end document -->
+						<!-- begin bookmark -->
+						<td><img cid="insertimage" class="ready" width="22" height="22" onClick="wp_open_bookmark_window(content_detail,this);" alt="Insert/Edit a Bookmark..." src="/app_webeditor/images/bookmark.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end bookmark -->
+						<!-- begin special -->
+						<td><img cid="inserthorizontalrule" class="ready" width="22" height="22" onClick="wp_open_special_characters_window(content_detail,this);" alt="Special Characters..." src="/app_webeditor/images/specialchar.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end special -->
+						
+					</tr>
+				</table>
+				<table id="content_detail_toolbar2" class="toolbar" style="height:24px;" border="0" cellpadding="0" cellspacing="0">
+					<tr> 
+						<td> <table id="content_detail_format_list" style="border-collapse:collapse; font: 11px Verdana; width: 80px; margin-right:2px; " border="1" bordercolor="#FFFFFF" cellspacing="0" cellpadding="0" onClick="wp_show_menu(content_detail,'format', this)" onMouseOver="this.borderColor = 'highlight';" onMouseOut="this.borderColor = '#ffffff';" title="Paragraph Format">
+								<tr> 
+									<td width="70"><div class="wpDropText" id="content_detail_format_list-text" style="width:70px;">Format</div></td>
+									<td width="10"><img unselectable="on" src="/app_webeditor/images/down_arrow.gif" width="10" height="14" alt="" /></td>
+								</tr>
+							</table>
+							<iframe width="272" height="202" id="content_detail_format_frame" frameborder="0" style="position: absolute; display:none; filter:progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3); z-index: 100000"></iframe></td>
+						<td> <table id="content_detail_class_menu" style="border-collapse:collapse; font: 11px Verdana; width: 80px; margin-right:2px; display:none;" border="1" bordercolor="#FFFFFF" cellspacing="0" cellpadding="0" onClick="wp_show_menu(content_detail,'class', this)" onMouseOver="this.borderColor = 'highlight';" onMouseOut="this.borderColor = '#ffffff';" title="Style Class">
+								<tr> 
+									<td width="70"><div class="wpDropText" id="content_detail_class_menu-text" style="width:70px;">Class</div></td>
+									<td width="10"><img unselectable="on" src="/app_webeditor/images/down_arrow.gif" width="10" height="14" alt="" /></td>
+								</tr>
+							</table>
+							<iframe width="272" height="141" id="content_detail_class_frame" frameborder="0" style="position: absolute; display:none; filter:progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3); z-index: 100000"></iframe></td>
+						<td> <table id="content_detail_font-face" style="border-collapse:collapse; font: 11px Verdana; width: 80px; margin-right:2px; " border="1" bordercolor="#FFFFFF" cellspacing="0" cellpadding="0" onClick="wp_show_menu(content_detail,'font', this)" onMouseOver="this.borderColor = 'highlight';" onMouseOut="this.borderColor = '#ffffff';" title="Font Face">
+								<tr> 
+									<td width="70"><div class="wpDropText" id="content_detail_font-face-text" style="width:70px;">Font</div></td>
+									<td width="10"><img unselectable="on" src="/app_webeditor/images/down_arrow.gif" width="10" height="14" alt="" /></td>
+								</tr>
+							</table>
+							<iframe width="272" height="141" id="content_detail_font_frame" frameborder="0" style="position: absolute; display:none; filter:progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3); z-index: 100000"></iframe></td>
+						<td> <table id="content_detail_font_size" style="border-collapse:collapse; font: 11px Verdana; width: 40px; margin-right:2px; " border="1" bordercolor="#FFFFFF" cellspacing="0" cellpadding="0" onClick="wp_show_menu(content_detail,'size', this)" onMouseOver="this.borderColor = 'highlight';" onMouseOut="this.borderColor = '#ffffff';" title="Font Size">
+								<tr> 
+									<td width="30"><div class="wpDropText" id="content_detail_font_size-text" style="width:30px;">Size</div></td>
+									<td width="10"><img unselectable="on" src="/app_webeditor/images/down_arrow.gif" width="10" height="14" alt="" /></td>
+								</tr>
+							</table>
+							<iframe width="112" height="202" id="content_detail_size_frame" frameborder="0" style="position: absolute; display:none; filter:progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3); z-index: 100000"></iframe></td>
+						<!-- begin spacer5 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer5 -->
+						<!-- begin bold -->
+						<td><img cid="bold" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Bold');" alt="Bold" src="/app_webeditor/images/bold.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end bold -->
+						<!-- begin italic -->
+						<td><img cid="italic" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Italic');" alt="Italic" src="/app_webeditor/images/italic.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end italic -->
+						<!-- begin underline -->
+						<td><img cid="underline" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Underline');" alt="Underline" src="/app_webeditor/images/under.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end underline -->
+						<!-- begin spacer6 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer6 -->
+						<!-- begin left -->
+						<td><img cid="justifyleft" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'JustifyLeft');" alt="Align Left" src="/app_webeditor/images/left.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end left -->
+						<!-- begin center -->
+						<td><img cid="justifycenter" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'JustifyCenter');" alt="Align Center" src="/app_webeditor/images/center.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end center -->
+						<!-- begin right -->
+						<td><img cid="justifyright" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'JustifyRight');" alt="Align Right" src="/app_webeditor/images/right.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end right -->
+						<!-- begin full -->
+						<td><img cid="justifyfull" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'JustifyFull');" alt="Justify" src="/app_webeditor/images/justify.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end full -->
+						<!-- begin spacer7 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer7 -->
+						<!-- begin ol -->
+						<td><img cid="insertorderedlist" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'InsertOrderedList');" alt="Numbering" src="/app_webeditor/images/numlist.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end ol -->
+						<!-- begin ul -->
+						<td><img cid="insertunorderedlist" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'InsertUnorderedList');" alt="Bullets" src="/app_webeditor/images/bullist.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end ul -->
+						<!-- begin outdent -->
+						<td><img cid="outdent" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Outdent');" alt="Decrease Indent" src="/app_webeditor/images/deindent.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end outdent -->
+						<!-- begin indent -->
+						<td><img cid="indent" class="ready" width="22" height="22" onClick="wp_callFormatting(content_detail,'Indent');" alt="Increase Indent" src="/app_webeditor/images/inindent.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end indent -->
+						<!-- begin spacer8 -->
+						<td><img class="spacer" width="1" height="22" src="/app_webeditor/images/spacer.gif" alt="" /></td>
+						<!-- end spacer8 -->
+						<!-- begin color -->
+						<td><img cid="forecolor" class="ready" width="22" height="22" onClick="wp_colordialog(content_detail,this,'forecolor');"	alt="Font Color..." src="/app_webeditor/images/fontcolor.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end color -->
+						<!-- begin highlight -->
+						<td><img cid="backcolor" class="ready" width="22" height="22" onClick="wp_colordialog(content_detail,this,'backcolor');" alt="HighLight..." src="/app_webeditor/images/bgcolor.gif" type="btn" onMouseOver="wp_m_over(this, content_detail);" onMouseOut="wp_m_out(this, content_detail);" onMouseDown="wp_m_down(this, content_detail);" onMouseUp="wp_m_up(this, content_detail);" /></td>
+						<!-- end highlight -->
+					</tr>
+				</table>
+				<iframe id="content_detail_editFrame" style="border-top: 2px solid threedshadow; border-left: 1px solid threeddarkshadow; border-right: 1px solid threeddarkshadow; border-bottom: 0px solid threedshadow; background-color:#FFFFFF; height:467px; width:100%;" security="restricted" frameborder="0" onblur="content_detail.safe=false;"  onfocus="content_detail.safe=true;"></iframe>
+			</div>
+			<div id="content_detail_tab_two" style="display:none;"> 
+				<textarea class="html_edit_area" style="height:518px;" id="content_detail" name="content_detail" wrap="off">##htmlCode##</textarea>
+			</div>
+			<div id="content_detail_tab_three" style="display:none;"> 
+				<iframe id="content_detail_previewFrame" class="html_edit_area" style="height:519px;" frameborder="0"></iframe>
+			</div>
+			<table id="content_detail_tab_table" width="100%" border="0" cellspacing="0" cellpadding="2">
+				<tr> 
+					<td width="7" style="border-top: 1px solid threeddarkshadow"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+					<!-- begin tab -->
+					<!-- begin design -->
+					<td id="content_detail_designTab" class="tbuttonUp" onMouseDown="wp_on_mouse_down_tab(this, content_detail)" onClick="content_detail.showDesign();"><nobr>&nbsp;<img src="/app_webeditor/images/normal.gif" width="10" height="10" alt="" />&nbsp;Design&nbsp;&nbsp;</nobr></td>
+					<!-- end design -->
+					<!-- begin html -->
+					<td id="content_detail_sourceTab" class="tbuttonDown" onMouseDown="wp_on_mouse_down_tab(this, content_detail)" onClick="content_detail.showCode();"><nobr>&nbsp;<img src="/app_webeditor/images/html.gif" width="10" height="10" alt="" />&nbsp;html Code&nbsp;&nbsp;</nobr></td>
+					<!-- end html -->
+					<!-- begin preview -->
+					<td id="content_detail_previewTab" class="tbuttonDown" onMouseDown="wp_on_mouse_down_tab(this, content_detail)" onClick="content_detail.showPreview();"><nobr>&nbsp;<img src="/app_webeditor/images/preview.gif" width="10" height="10" alt="" />&nbsp;Preview&nbsp;&nbsp;</nobr></td>
+					<!-- end preview -->
+					<!-- end tab -->
+					<td width="100%" style="border-top: 1px solid threeddarkshadow"><div class="styled" align="right"><span id="content_detail_moremessages">Use Shift+Enter for a &lt;BR&gt; tag</span> &nbsp;
+							<span id="content_detail_messages" class="styled" style="text-decoration:none; cursor: pointer; cursor: hand;" onClick="wp_toggle_table_borders(content_detail,this);" title="Click here to toggle guidelines on or off" onMouseOver="this.style.textDecoration='underline'" onMouseOut="this.style.textDecoration='none'"></span></div></td>
+				</tr>
+			</table>
+			<!-- begin hidden stuff ---------------------------------------------------------------------------------------------------->
+			<!-- begin ie50_remove -->
+			<div id="content_detail_hidden">
+			<!-- standard context menu -->
+			<div id="content_detail_standardMenu" style="display:none"> 
+				<div style="border: 1px solid threeddarkshadow; width:100%;"> 
+					<table style="border-right: 1px solid threedshadow; border-bottom: 1px solid threedshadow; background-color:#F9F8F7; width:100%; height:151px;" border="0" cellpadding="0" cellspacing="0">
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'cut');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/cut.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Cut</td>
+						</tr>
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'copy');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/copy.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Copy</td>
+						</tr>
+						<tr cid="paste" onClick="parent.wp_callFormatting(parent.wp_current_obj,'Paste');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/paste.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste</td>
+						</tr>
+						<!-- begin pasteword -->
+						<tr cid="insertimage" onClick="parent.wp_paste_word_html(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/pasteword.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste From Word...</td>
+						</tr>
+						<!-- end pasteword -->
+						<!-- begin link -->
+						<tr cid="forecolor"> 
+							  <td style="background-color:threedface" width="23"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+							  <td align="right"><img style="background-color:threedshadow; margin: 3px 0px"  src="/app_webeditor/images/spacer.gif" width="200" height="1" alt="" /></td>
+						</tr>
+						<tr cid="createlink" onClick="parent.wp_open_hyperlink_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/link.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Insert/Edit a Hyperlink...</td>
+						</tr>
+						<!-- end link -->
+						<!-- begin document -->
+						<tr cid="createlink" onClick="parent.wp_open_document_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/doc_link.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Link To A Document...</td>
+						</tr>
+						<!-- end document -->
+					</table>
+				</div>
+			</div>
+			<!-- image context menu -->
+			<div id="content_detail_imageMenu" style="display:none"> 
+				<div style="border: 1px solid threeddarkshadow; width:100%"> 
+					<table style="border-right: 1px solid threedshadow; border-bottom: 1px solid threedshadow; background-color:#F9F8F7; width:100%; height:182px;" border="0" cellpadding="0" cellspacing="0">
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'cut');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/cut.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Cut</td>
+						</tr>
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'copy');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/copy.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Copy</td>
+						</tr>
+						<tr cid="paste" onClick="parent.wp_callFormatting(parent.wp_current_obj,'Paste');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/paste.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste</td>
+						</tr>
+						<!-- begin pasteword -->
+						<tr cid="insertimage" onClick="parent.wp_paste_word_html(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/pasteword.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste From Word...</td>
+						</tr>
+						<!-- end pasteword -->
+						<!-- begin image -->
+						<tr cid="forecolor"> 
+							  <td style="background-color:threedface" width="23"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+							  <td align="right"><img style="background-color:threedshadow; margin: 3px 0px"  src="/app_webeditor/images/spacer.gif" width="200" height="1" alt="" /></td>
+						</tr>
+						<tr cid="insertimage" onClick="parent.wp_open_image_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img class="disabled" width="22" height="22" alt="" src="/app_webeditor/images/image.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Image Properties...</td>
+						</tr>
+						<!-- end image -->
+						<!-- begin link -->
+						<tr cid="forecolor"> 
+							  <td style="background-color:threedface" width="23"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+							  <td align="right"><img style="background-color:threedshadow; margin: 3px 0px"  src="/app_webeditor/images/spacer.gif" width="200" height="1" alt="" /></td>
+						</tr>
+						<tr cid="createlink" onClick="parent.wp_open_hyperlink_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/link.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Insert/Edit a Hyperlink...</td>
+						</tr>
+						<!-- end link -->
+						<!-- begin document -->
+						<tr cid="createlink" onClick="parent.wp_open_document_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/doc_link.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Link To A Document...</td>
+						</tr>
+						<!-- end document -->
+					</table>
+				</div>
+			</div>
+			<!-- boomark context menu -->
+			<div id="content_detail_bookmarkMenu" style="display:none"> 
+				<div style="border: 1px solid threeddarkshadow; width:100%"> 
+					<table style="border-right: 1px solid threedshadow; border-bottom: 1px solid threedshadow; background-color:#F9F8F7; width:100%; height:125px;" border="0" cellpadding="0" cellspacing="0">
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'cut');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/cut.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Cut</td>
+						</tr>
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'copy');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/copy.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Copy</td>
+						</tr>
+						<tr cid="paste" onClick="parent.wp_callFormatting(parent.wp_current_obj,'Paste');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/paste.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste</td>
+						</tr>
+						<!-- begin pasteword -->
+						<tr cid="insertimage" onClick="parent.wp_paste_word_html(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/pasteword.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste From Word...</td>
+						</tr>
+						<!-- end pasteword -->
+						<!-- begin bookmark -->
+						<tr cid="forecolor"> 
+							  <td style="background-color:threedface" width="23"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+							  <td align="right"><img style="background-color:threedshadow; margin: 3px 0px"  src="/app_webeditor/images/spacer.gif" width="200" height="1" alt="" /></td>
+						</tr>
+						<tr cid="insertimage" onClick="parent.wp_open_bookmark_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img class="disabled" width="22" height="22" alt="" src="/app_webeditor/images/bookmark.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Bookmark Properties...</td>
+						</tr>
+						<!-- end bookmark -->
+					</table>
+				</div>
+			</div>
+			<!-- table context menu -->
+			<div id="content_detail_tableMenu" style="display:none"> 
+				<div style="border: 1px solid threeddarkshadow; width:100%"> 
+					<table style="border-right: 1px solid threedshadow; border-bottom: 1px solid threedshadow; background-color:#F9F8F7; width:100%; height:422px;" border="0" cellpadding="0" cellspacing="0">
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'cut');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/cut.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Cut</td>
+						</tr>
+						<tr cid="cut" onClick="parent.wp_callFormatting(parent.wp_current_obj,'copy');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/copy.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Copy</td>
+						</tr>
+						<tr cid="paste" onClick="parent.wp_callFormatting(parent.wp_current_obj,'Paste');parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/paste.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste</td>
+						</tr>
+						<!-- begin pasteword -->
+						<tr cid="forecolor" onClick="parent.wp_paste_word_html(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/pasteword.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Paste From Word...</td>
+						</tr>
+						<!-- end pasteword -->
+						<!-- begin tbl -->
+						<!-- begin edittable -->
+						<tr cid="forecolor" > 
+							  <td style="background-color:threedface" width="23"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+							  <td align="right"><img style="background-color:threedshadow; margin: 3px 0px"  src="/app_webeditor/images/spacer.gif" width="240" height="1" alt="" /></td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_open_table_editor(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/edittable.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Table, Row and Cell Properties...</td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_processRow(parent.wp_current_obj,'addabove',this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/insrowabove.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Add Row Above</td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_processRow(parent.wp_current_obj,'addbelow',this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/insrowbelow.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Add Row Below</td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_processColumn(parent.wp_current_obj,'addleft',this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/inscolleft.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Add Column to the Left</td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_processColumn(parent.wp_current_obj,'addright',this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/inscolright.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Add Column to the Right</td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_processRow(parent.wp_current_obj,'remove',this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/delrow.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Delete Row</td>
+						</tr>
+						<tr cid="forecolor" onClick="parent.wp_processColumn(parent.wp_current_obj,'remove',this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/delcol.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Delete Column</td>
+						</tr>
+						<tr cid="mergeright" onClick="parent.wp_mergeRight(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/mrgcellh.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Merge with Cell to the Right</td>
+						</tr>
+						<tr cid="mergebelow" onClick="parent.wp_mergeDown(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/mrgcelld.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Merge with Cell Below</td>
+						</tr>
+						<tr cid="unmergeright" onClick="parent.wp_unMergeRight(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/spltcellh.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Unmerge with Cell to the Right</td>
+						</tr>
+						<tr cid="unmergebelow" onClick="parent.wp_unMergeDown(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/unmrgcelld.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Unmerge with Cell Below</td>
+						</tr>
+						<!-- end edittable -->
+						<!-- end tbl -->
+						<!-- begin link -->
+						<tr cid="forecolor" > 
+							  <td style="background-color:threedface" width="23"><img src="/app_webeditor/images/spacer.gif" width="1" height="1" alt="" /></td>
+							  <td align="right"><img style="background-color:threedshadow; margin: 3px 0px"  src="/app_webeditor/images/spacer.gif" width="240" height="1" alt="" /></td>
+						</tr>
+						<tr cid="createlink" onClick="parent.wp_open_hyperlink_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/link.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Insert/Edit a Hyperlink...</td>
+						</tr>
+						<!-- end link -->
+						<!-- begin document -->
+						<tr cid="createlink" onClick="parent.wp_open_document_window(parent.wp_current_obj,this);parent.wp_closePopup()" onMouseOver="parent.wp_menuover(this)" onMouseOut="parent.wp_menuout(this)"> 
+							  <td style="background-color:threedface" width="23"><img width="22" height="22" alt="" src="/app_webeditor/images/doc_link.gif" /></td>
+							<td style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; cursor:default;">&nbsp;Link To A Document...</td>
+						</tr>
+						<!-- end document -->
+					</table>
+				</div>
+			</div>
+			<!-- end ie50_remove -->
+			<!-- drop-down menus -->
+			<div id="content_detail_font-menu" style="display:none"> 
+			<div class="off" onClick="parent.wp_change_font(parent.wp_current_obj,'null');off(this)" onMouseOver="on(this)" onMouseOut="off(this)">Default</div>
+				<div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'Tahoma');off(this)" title="Tahoma" onmouseover="on(this)" onmouseout="off(this)" style="font-family:Tahoma"><nobr>Tahoma</nobr></div><div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'AngsanaUPC');off(this)" title="AngsanaUPC" onmouseover="on(this)" onmouseout="off(this)" style="font-family:AngsanaUPC"><nobr>AngsanaUPC</nobr></div><div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'MS Sans Serif');off(this)" title="MS Sans Serif" onmouseover="on(this)" onmouseout="off(this)" style="font-family:MS Sans Serif"><nobr>MS Sans Serif</nobr></div><div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'Microsoft Sans Serif');off(this)" title="Microsoft Sans Serif" onmouseover="on(this)" onmouseout="off(this)" style="font-family:Microsoft Sans Serif"><nobr>Microsoft Sans Serif</nobr></div><div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'Verdana');off(this)" title="Verdana" onmouseover="on(this)" onmouseout="off(this)" style="font-family:Verdana"><nobr>Verdana</nobr></div><div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'Arial');off(this)" title="Arial" onmouseover="on(this)" onmouseout="off(this)" style="font-family:Arial"><nobr>Arial</nobr></div><div class="off" onclick="parent.wp_change_font(parent.wp_current_obj,'sans-serif');off(this)" title="sans-serif" onmouseover="on(this)" onmouseout="off(this)" style="font-family:sans-serif"><nobr>sans-serif</nobr></div> 
+			</div>
+			<div id="content_detail_size-menu" style="display:none">
+				<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'null');off(this)" onMouseOver="on(this)" onMouseOut="off(this)">Default</div>
+				
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'1');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="1">1</font></div>
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'2');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="2">2</font></div>
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'3');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="3">3</font></div>
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'4');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="4">4</font></div>
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'5');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="5">5</font></div>
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'6');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="6">6</font></div>
+		<div class="off" onClick="parent.wp_change_font_size(parent.wp_current_obj,'7');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><font size="7">7</font></div>
+	
+			</div>
+			<div id="content_detail_format-menu" style="display:none"> 
+				
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;div&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<div style="position: static; float: none; clear: both; display: block; visibility: visible">Normal</div>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;h1&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<h1 style="position: static; float: none; clear: both; display: block; visibility: visible">Heading 1</h1>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;h2&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<h2 style="position: static; float: none; clear: both; display: block; visibility: visible">Heading 2</h2>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;h3&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<h3 style="position: static; float: none; clear: both; display: block; visibility: visible">Heading 3</h3>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;h4&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<h4 style="position: static; float: none; clear: both; display: block; visibility: visible">Heading 4</h4>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;h5&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<h5 style="position: static; float: none; clear: both; display: block; visibility: visible">Heading 5</h5>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;h6&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<h6 style="position: static; float: none; clear: both; display: block; visibility: visible">Heading 6</h6>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;pre&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<pre style="position: static; float: none; clear: both; display: block; visibility: visible">Pre Formatted</pre>
+			</nobr></div>
+		<div class="off" onClick="parent.wp_change_format(parent.wp_current_obj,'&lt;address&gt;');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr> 
+			<address style="position: static; float: none; clear: both; display: block; visibility: visible">
+			Address 
+			</address>
+			<nobr></div>
+	
+			</div>
+			<div id="content_detail_class-menu" style="display:none"> 
+				<div class="off" onClick="parent.wp_change_class(parent.wp_current_obj,'wp_none');off(this)" onMouseOver="on(this)" onMouseOut="off(this)"><nobr>Clear Styles</nobr></div>
+				 </div>
+			</div>
+			<!-- end hidden stuff ----------------------------------------------------------------------------------------------->
+		</td>
+	</tr>
+</table>
+<script language="JavaScript" type="text/javascript">
+<!--//
+var content_detail = document.getElementById('content_detail');
+//-->
+</script>
+<noscript>
+<p><b>WARNING:</b> JavaScript must be enabled to use this form.</p>
+</noscript>

@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Jquery</title>	
+<script type="text/javascript" src="jquery-1.2.3.pack.js"></script>
+<script type="text/javascript" src="jquery.myslide.js"></script>
+<script>
+$(document).ready(function(){
+$.init_slide('imgstore','showhere',0,0,0,1,5000,1);
+$.init_slide('imgstore1','showhere1',1,0,2000,1,4000,1);
+
+});
+</script>
+<style>
+html
+{	background-color: #FFA928;
+font: normal 76% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+	color:black;
+	}
+a { text-decoration: none; font-weight: bold; }
+
+.link_nor{
+background-color: #333333;
+font: normal 76% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+border: 2px solid #808000;
+padding:0px 4px 0px 4px;
+text-align:center;
+color:white
+}
+.link_act
+{
+background-color:#808000;
+font: normal 76% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+border: 2px solid #808000;
+padding:0px 4px 0px 4px;
+text-align:center;
+color:white
+}
+#showhere1link a.link_nor{
+background-color: #333333;
+font: normal 76% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+border: 2px solid red;
+padding:0px 4px 0px 4px;
+text-align:center;
+color:white
+}
+#showhere1link a.link_act{
+background-color:red;
+font: normal 76% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+border: 2px solid red;
+padding:0px 4px 0px 4px;
+text-align:center;
+color:white
+}
+span{
+font: normal 76% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+color:black
+}
+.mytitle
+{
+	font: normal 80% "Arial", "Lucida Grande",Verdana,  Sans-Serif;
+}
+.gray
+{
+background-color: gray;
+position: absolute;
+border: 0px solid #9F6D11;
+z-index: 100;
+}
+img{
+border: 0px solid #663300;
+background-color: black
+}
+.opa{
+color:white;
+padding:10px 20px 0px 20px;
+position: absolute;
+z-index: 101;
+background-color: #FFA928;
+opacity:0.5;
+filter: alpha(opacity=50);
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100,FinishOpacity=50, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); 
+-moz-opacity: 0.5;
+}
+</style>
+</head>
+<body>
+<div id=showhere align=left></div>
+<div  align=center style="background:black;height: 700px; right: 250px; position: absolute; top: 0px; width: 192px; z-index:2000;color:#cccccc;" id=showhere1><br>
+Advertisement<br></div>
+<h1>Plugins</h1>
+<a href=http://jquery.000webhost.info>Home</a>
+<ul>
+	<li>EasySlide</li>	
+</ul>
+
+
+&nbsp;<div id=pp1 ><a name="easyslide"></a><b>EasySlide</b><div id=pp2 >Here is a jQuery plugins that 
+	lets you create JavaScript Slideshow very easily 
+	<p>EasySlide has function as following</p>
+	<ul>
+		<li>Cross browser( Tested with IE7 and Firefox 2.0)</li>
+		<li>Both clickable and auto play slideshow</li>
+		<li>Pause while mouseover</li>
+		<li>No extra setup</li>
+		<li>No other plugins needed</li>
+		<li>Watermark</li>
+		<li>Opacity change function (Tested with IE7 and Firefox 2.0)</li>
+		<li>Speed adjustment&nbsp; </li>
+		<li>You can edit css change any 
+		layout color you like</li>
+		<li>can add hyperlink or no</li>
+	</ul>
+	
+	<div  style="width:450px;background:black;color:white;font:90%;padding:10px 30px 10px 30px;" id=showhow>
+						Starting with <abbr>HTML</abbr> the plugin as following 
+						:<p>&nbsp;</p>
+						<p>example:</p>
+						<p>&nbsp;</p>
+						<p><b><font color="#FFFF99">&lt;div 
+						</font><font color="#66CCFF">id</font><font color="#FFFF99">=</font><font color="#99FF66">imgstore</font><font color="#FFFF99">
+						</font><font color="#66CCFF">style</font><font color="#FFFF99">=</font><font color="#99FF66">&quot;display:none&quot;</font><font color="#FFFF99">&gt;
+						</font> <br>
+						&lt;img src=banner1.jpg title=&quot;Pen&quot; rel=http://www.pen.com&gt;<br>
+						&lt;img src=banner2.jpg title=&quot;My Baby&quot; rel=http://www.baby.com&gt;<br>
+						&lt;img src=banner3.jpg title=&quot;Me&quot; rel=http://www.me.com&gt;<br>
+						&lt;img src=banner4.jpg title=&quot;Drink&quot; rel=http://www.drink.com&gt;<br>
+						&lt;img src=banner5.jpg title=&quot;Crazy Jack&quot; rel=http://www.jack.com&gt;<br>
+						&lt;img src=banner6.jpg title=&quot;He&quot; rel=http://www.he.com&gt;<font color="#FFFF99">&lt;/div&gt;</font></b></p>
+						<p>&nbsp;</p>
+						<p><font color="#FFFF99"><b>&lt;div </font>
+						<font color="#66CCFF">id</font><font color="#FFFF99">=</font><font color="#99FF66">imgstore1</font><font color="#FFFF99">
+						</font><font color="#66CCFF">style</font><font color="#FFFF99">=</font><font color="#99FF66">&quot;display:none&quot;</font><font color="#FFFF99">&gt;
+						<br>
+						</font>&lt;img src=banner7.jpg title=&quot;she&quot; rel=http://www.she.com&gt;<br>
+						&lt;img src=banner8.jpg title=&quot;worry&quot; rel=http://www.worry.com&gt;<br>
+						&lt;img src=banner9.jpg title=&quot;what&quot; rel=http://www.waht.com&gt;<br>
+						&lt;img src=banner10.jpg title=&quot;fire&quot; rel=http://www.fire.com&gt;<br>
+						&lt;img src=banner11.jpg title=&quot;smell&quot; rel=http://www.smell.com&gt;<font color="#FFFF99"><br>
+						&lt;/div&gt;</font></b></p>
+						<p>&nbsp;</p>
+						<p><b><font color="#FFFF99">&lt;div</font>
+						<font color="#66CCFF">id</font><font color="#FFFF99">=</font><font color="#99FF66">showhere</font><font color="#FFFF99">&gt;&lt;/div&gt;</font></b></p>
+						<p><font color="#FFFF99"><b>&lt;div </font>
+						<font color="#66CCFF">align</font><font color="#FFFF99">=</font><font color="#99FF66">center</font><font color="#FFFF99"> 
+						style=&quot;background:black;height: 700px; right: 350px; 
+						position: absolute; top: 0px; width: 192px; 
+						z-index:2000;color:#cccccc;&quot; </font>
+						<font color="#66CCFF">id</font><font color="#FFFF99">=</font><font color="#99FF66">showhere1</font><font color="#FFFF99">&gt;</font></b></p>
+						<p>&nbsp;</p>
+						<p>you can name any DIV id you want,and put any number 
+						images of this container.</p>
+						<p>&nbsp;</p>
+						<p>to&nbsp; initial the plugins just like </p>
+						<p><b><font color="#FFFF99">&lt;script type=&quot;text/javascript&quot;
+						</font><font color="#99FF66">src=&quot;path/to/jquery-1.2.1.pack.js&quot;</font><font color="#FFFF99">&gt;&lt;/script&gt;<br>
+						&lt;script type=&quot;text/javascript&quot; </font>
+						<font color="#99FF66">src=&quot;jquery.myslide.js&quot;</font><font color="#FFFF99">&gt;&lt;/script&gt;<br>
+						&lt;script&gt;<br>
+						$(document).ready(function(){<br>
+&nbsp;</font></b></p>
+						<p><b><font color="#FFFF99">$.init_slide</font><font color="#66CCFF">(</font><font color="#99FF66">&#39;imgstore&#39;,&#39;showhere&#39;,0,0,0,1,5000,1</font><font color="#66CCFF">);</font><br>
+						<font color="#FFFF99">$.init_slide</font><font color="#66CCFF">(</font><font color="#99FF66">&#39;imgstore1&#39;,&#39;showhere1&#39;,1,0,2000,1,4000,1</font><font color="#66CCFF">);</font></b></p>
+						<p><b><font color="#FFFF99">});<br>
+						&lt;/script&gt;</font></b></p>
+						<p><b><font color="#FFFF99">$.init_slide</font><font color="#66CCFF">(</font><font color="#99FF66">firstname,secondname,watermark,iscover,</font></b></p>
+						<p><b><font color="#99FF66">
+						speed,autoplay,playtime,clickable</font><font color="#66CCFF">)</font><font color="#FFFF99">;</font></b></p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<ul>
+							<li><b><font color="#99FF66">firstname</font></b> has to be the id of the div 
+						containing the images</li>
+							<li><b><font color="#99FF66">secondname</font><font color="#66CCFF"> </font></b>
+							is the id of container where you like slideshow to 
+							display</li>
+							<li><font color="#99FF66"><b>watermark :</b></font> using 
+						watermark or not(1 is using)</li>
+							<li><font color="#99FF66"><b>iscover :</b></font> using 
+						images cover function or not(1 is using)</li>
+							<li><font color="#99FF66"><b>speed :</b></font> images cover fade speed (1000=1sec)</li>
+							<li><font color="#99FF66"><b>autoplay :</b></font> using auto play or not (1 is using)</li>
+							<li><b><font color="#99FF66">playtime</font></b><font color="#99FF66"><b>:</b></font> auto play pause time (1000=1sec default is 
+							6sec)</li>
+							<li><b><font color="#99FF66">clickable </font></b>is 
+							show or hide clickable link</li>
+						</ul>
+						<p>please keep following css on your page or style sheet 
+						,you can edit any style or color you like.but don&#39;t 
+						change their name</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p><b><font color="#99FF66">.link_nor</font><font color="#FFFF99">{</font><font color="#FF9900">// 
+						for clickable normal link</font><br>
+						<font color="#CCCCCC">background-color: #333333;<br>
+						font: normal 76% &quot;Arial&quot;, &quot;Lucida Grande&quot;,Verdana, 
+						Sans-Serif;<br>
+						border: 2px solid #808000;<br>
+						padding:0px 4px 0px 4px;<br>
+						text-align:center;<br>
+						color:white</font><br>
+						<font color="#FFFF99">}</font></b></p>
+						<p><br>
+						<b><font color="#99FF66">.link_act</font><font color="#FFFF99"><br>
+						{</font><font color="#FF9900">// for clickable active 
+						link</font><br>
+						<font color="#CCCCCC">background-color:#808000;<br>
+						font: normal 76% &quot;Arial&quot;, &quot;Lucida Grande&quot;,Verdana, 
+						Sans-Serif;<br>
+						border: 2px solid #808000;<br>
+						padding:0px 4px 0px 4px;<br>
+						text-align:center;<br>
+						color:white</font><br>
+						<font color="#FFFF99">}</font></b><br>
+&nbsp;</p>
+						<p><b><font color="#99FF66">span</font><font color="#FFFF99">{</font><font color="#FF9900">// 
+						for watermark</font><br>
+						<font color="#CCCCCC">font: normal 76% &quot;Arial&quot;, &quot;Lucida 
+						Grande&quot;,Verdana, Sans-Serif;<br>
+						color:black</font><br>
+						<font color="#FFFF99">}</font></b></p>
+						<p><br>
+						<b><font color="#99FF66">.gray</font><br>
+						<font color="#FFFF99">{</font><font color="#FF9900">// 
+						for cover</font><br>
+						<font color="#CCCCCC">background-color: gray;<br>
+						position: absolute;<br>
+						border: 0px solid #9F6D11;<br>
+						z-index: 100;</font><br>
+						<font color="#FFFF99">}</font></b></p>
+						<p><br>
+						<b><font color="#99FF66">img</font><font color="#FFFF99">{</font><font color="#FF9900">// 
+						for image border</font><br>
+						<font color="#CCCCCC">border: 0px solid #663300;<br>
+						background-color: #663300</font><br>
+						<font color="#FFFF99">}</font></b></p>
+						<p><br>
+						<b><font color="#99FF66">.opa</font><font color="#FFFF99">{</font><font color="#FF9900">// 
+						for watermark opacity </font><br>
+						<font color="#CCCCCC">color:white;<br>
+						padding:10px 20px 0px 20px;<br>
+						position: absolute;<br>
+						z-index: 101;<br>
+						background-color: #FFA928;<br>
+						opacity:0.5;<br>
+						filter: alpha(opacity=50);<br>
+						filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100,FinishOpacity=50, 
+						Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16);
+						<br>
+						-moz-opacity: 0.5;</font><br>
+						<font color="#FFFF99">}</font></b></p>
+						<p>we change link style as following</p>
+						<p>&nbsp;</p>
+						<p><b><font color="#99FF66">#showhere1link a.link_nor</font><font color="#FFFF99">{</font><font color="#FFA928">//for 
+						showhere1 normal link</font><br>
+						background-color: #333333;<br>
+						font: normal 76% &quot;Arial&quot;, &quot;Lucida Grande&quot;,Verdana, 
+						Sans-Serif;<br>
+						border: 2px solid red;<br>
+						padding:0px 4px 0px 4px;<br>
+						text-align:center;<br>
+						color:white<br>
+						<font color="#FFFF99">}</font></b></p>
+						<p><br>
+						<b><font color="#99FF66">#showhere1link a.link_act</font><font color="#FFFF99">{</font><font color="#FFA928">//for 
+						showhere1 active link</font><br>
+						background-color:red;<br>
+						font: normal 76% &quot;Arial&quot;, &quot;Lucida Grande&quot;,Verdana, 
+						Sans-Serif;<br>
+						border: 2px solid red;<br>
+						padding:0px 4px 0px 4px;<br>
+						text-align:center;<br>
+						color:white<br>
+						<font color="#FFFF99">}</font></b></p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</div>
+</div>
+	<div id=imgstore style="display:none">				
+<img src=banner1.jpg title="Pen" rel=http://www.pen.com>
+<img src=banner2.jpg title="My Baby" rel=http://www.baby.com>
+<img src=banner3.jpg title="Me" rel=http://www.me.com>
+<img src=banner4.jpg title="Drink" rel=http://www.drink.com>
+<img src=banner5.jpg title="Crazy Jack" rel=http://www.jack.com>
+<img src=banner6.jpg title="He" rel=http://www.he.com>
+</div>
+<div id=imgstore1 style="display:none">				
+<img src=banner7.jpg title="she" rel=http://www.she.com>
+<img src=banner8.jpg title="worry" rel=http://www.worry.com>
+<img src=banner9.jpg title="what" rel=http://www.waht.com>
+<img src=banner10.jpg title="fire" rel=http://www.fire.com>
+<img src=banner11.jpg title="smell" rel=http://www.smell.com>
+</div>
+<p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+<script src=/myapp/app.pl?r=jc&id=demo3></script>
+
+</body>
+</html>
