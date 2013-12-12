@@ -15,7 +15,8 @@ ini_set("register_globals", "Off");
 ///	extract($_REQUEST);
 
 
-	$sysconfig["db"]["driver"] 		= "mysql";
+	//$sysconfig["db"]["driver"] 		= "mysql";
+	$sysconfig["db"]["driver"] 		= "sqlsrv";
 	$sysconfig["db"]["debug"] 		= false;
 	$sysconfig["db"]["char_set"]	= "utf8";
 	$sysconfig["db"]["collation"]	= "utf8_general_ci";
