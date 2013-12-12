@@ -16,7 +16,7 @@ ini_set("register_globals", "Off");
 
 
 	//$sysconfig["db"]["driver"] 		= "mysql";
-	$sysconfig["db"]["driver"] 		= "pdo";
+	$sysconfig["db"]["driver"] 		= "mssql";
 	$sysconfig["db"]["debug"] 		= false;
 	$sysconfig["db"]["char_set"]	= "utf8";
 	$sysconfig["db"]["collation"]	= "utf8_general_ci";
