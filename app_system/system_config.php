@@ -28,11 +28,17 @@ ini_set("register_globals", "Off");
 	
 	
 /////////// server
-	$sysconfig["db"]["host"] 		= "localhost";	
-	$sysconfig["db"]["name"]		= "thinksoft_web2011";
-	$sysconfig["db"]["user"] 		= "thinkroot";
-	$sysconfig["db"]["pws"] 		= "devthink2011";
+	$sysconfig["db"]["host"] 		= "grz8ip252v.database.windows.net";	
+	$sysconfig["db"]["name"]		= "thinkdb";
+	$sysconfig["db"]["user"] 		= "thinkdb";
+	$sysconfig["db"]["pws"] 		= "Admin2012";
 	
+	
+/////////// server
+///	$sysconfig["db"]["host"] 		= "localhost";	
+//	$sysconfig["db"]["name"]		= "thinksoft_web2011";
+//	$sysconfig["db"]["user"] 		= "thinkroot";
+//	$sysconfig["db"]["pws"] 		= "devthink2011";
 	
 
 /*
