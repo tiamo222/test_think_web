@@ -28,10 +28,10 @@ ini_set("register_globals", "Off");
 	
 	
 /////////// server
-	$sysconfig["db"]["host"] 		= "grz8ip252v.database.windows.net";	
-	$sysconfig["db"]["name"]		= "thinkdb";
-	$sysconfig["db"]["user"] 		= "thinkdb";
-	$sysconfig["db"]["pws"] 		= "Admin2012";
+	$sysconfig["db"]["host"] 		= "ap-cdbr-azure-east-b.cloudapp.net";	
+	$sysconfig["db"]["name"]		= "thinkwebmysqldb";
+	$sysconfig["db"]["user"] 		= "b896084e5a9353";
+	$sysconfig["db"]["pws"] 		= "c171d329";
 	
 	
 /////////// server
