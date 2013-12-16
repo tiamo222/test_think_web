@@ -28,7 +28,7 @@ ini_set("register_globals", "Off");
 	
 	
 /////////// server
-	$sysconfig["db"]["host"] 		= "ap-cdbr-azure-east-b.cloudapp.net";	
+	$sysconfig["db"]["host"] 		= "localhost";	
 	$sysconfig["db"]["name"]		= "thinkwebMySQLDB";
 	$sysconfig["db"]["user"] 		= "b896084e5a9353";
 	$sysconfig["db"]["pws"] 		= "c171d329";
